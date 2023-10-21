@@ -1,0 +1,143 @@
+:root{
+    background-color: black;
+    color:white
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+header,
+section {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+section:nth-child(2n) {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    color: black;    
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.hero {
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content article {
+  flex-direction: column;
+}
+
+section.crafts article {
+  gap: 24px;
+  margin-top: 24px;
+}
+
+section.crafts img {
+  height: 200px;
+}
+
+.contact ul {
+  padding: 0;
+}
+
+.contact ul > li {
+  display: inline-block;
+}
+.btn {
+    text-decoration:solid;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-size: 1rem;
+    
+  }
+  .craft-card{
+    overflow: hidden;
+    padding-right: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 #370466;
+    
+  }
+  .craft-card img {
+    transition: all 200ms ease-in-out;
+  }
+  
+  .craft-card:hover img {
+    transform: scale(1.1);
+  }
+  
+.craft-card ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+  }
+
+.craft-card li{
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+}
+
+.craft-card li::before {
+    content: "";
+    margin-right: 4px;
+  }
+  
+  .craft-card li:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);;
+  }
+
+  b{
+    background: -webkit-linear-gradient(#4facfe,#00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  header{
+    background:url("https://blog.gitguardian.com/content/images/2022/12/22WXX-thinking-like-hacker.png");
+  }
+  
